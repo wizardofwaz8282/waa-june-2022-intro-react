@@ -5,17 +5,11 @@ import Login from './component/Login';
 
 
 function App() {
-  const initialState ={ 
-    logins : {username :'elaheh',password:'DANESHFAR'}
-  }
   
-  let [LoginState , setLoginState ] = useState(initialState);
-
    return(
     <div className='App'>
       {
-        //<Login/>
-            <Login username={Login.username} password={Login.password} />
+        <Login/>
       }
     </div>
    )
