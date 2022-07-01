@@ -1,11 +1,11 @@
 import React from "react";
 
-function loging(obj){
+function Login(obj){
     return(
         <form>
         <label>
           <p>Username</p>
-          <input type="text" />
+          <input type="texusert" />
         </label>
         <label>
           <p>Password</p>
@@ -17,4 +17,4 @@ function loging(obj){
       </form>
     )
 }
-export default loging;
+export default Login;

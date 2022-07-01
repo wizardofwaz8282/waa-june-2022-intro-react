@@ -1,29 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
 import React, { useState } from 'react';
-import product from '/component/product';
-import login from '/component/login';
+import Login from './component/Login';
 
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  const initialState ={ 
+    logins : {username :'elaheh',password:'DANESHFAR'}
+  }
+  
+  let [LoginState , setLoginState ] = useState(initialState);
+
+   return(
+    <div className='App'>
+      {
+        //<Login/>
+            <Login username={Login.username} password={Login.password} />
+      }
     </div>
-  );
+   )
 }
 
 export default App;
