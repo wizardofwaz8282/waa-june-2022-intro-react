@@ -1,0 +1,18 @@
+.loginForm{
+    display:grid;
+    margin:auto;
+    width: 100px;
+    text-align: center;
+}
+.header{
+    border-bottom: double black;
+}
+#buttons{
+    display: block;
+}
+#buttons :first{
+    margin-left:10;
+}
+#buttons :last-child{
+    margin-right:10;
+}
