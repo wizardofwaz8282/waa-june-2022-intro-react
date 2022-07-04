@@ -1,8 +1,8 @@
 // import { render } from "@testing-library/react";
 import React, {useState} from 'react';
-import { render } from 'react-dom';
-import '../css/Login.css'
-import Product from './Product.js';
+// import { render } from 'react-dom';
+import '../css/all.css'
+// import Product from './Product.js';
 import Register from './Register.js';
 
 
@@ -12,12 +12,16 @@ function Login(props){
 
     function routeToProductPage(){
         alert("THIS IS WHERE PRODUCT PAGE WOULD DISPLAY... IF I HAD ONEEE")
-        render(
-            <Product/>
-        )
+        // render(
+        //     <Product/>
+        // )
     }
     function routeToRegisterPage(){
-        alert("THIS IS WHERE REGISTER PAGE WOULD DISPLAY... IF I HAD ONEEE")
+        return(
+            <div>
+                <Register/>
+            </div>  
+        )
     }
 
     return(
